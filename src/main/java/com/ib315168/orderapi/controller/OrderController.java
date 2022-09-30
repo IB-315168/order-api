@@ -28,6 +28,7 @@ public class OrderController
   }
 
   @RequestMapping(method = RequestMethod.PATCH)
+  @ResponseBody
   public void updateOrder(@RequestBody Order order) {
     OrderRepository.update(order);
   }
